@@ -1,0 +1,14 @@
+{
+  "name": "news",
+  "version": "0.2.0",
+  "description": "Browse the local News archive.",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "News",
+    "shortDescription": "Your personal AI news archive",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/icon.svg",
+    "brandColor": "#E9B46B"
+  }
+}

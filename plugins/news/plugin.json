@@ -1,0 +1,29 @@
+{
+  "name": "news",
+  "version": "0.2.0",
+  "description": "Browse the local News archive with search and source links.",
+  "extensions": {
+    "com.openai": {
+      "skills": "./skills/",
+      "mcpServers": "./.mcp.json",
+      "interface": {
+        "displayName": "News",
+        "shortDescription": "Your personal AI news archive",
+        "defaultPrompt": [
+          "Open News and show the latest archived edition."
+        ],
+        "composerIcon": "./assets/icon.svg",
+        "logo": "./assets/icon.svg",
+        "brandColor": "#E9B46B",
+        "developerName": "laughmaker",
+        "category": "Productivity"
+      }
+    }
+  },
+  "license": "MIT",
+  "repository": "https://github.com/laughmaker/news-codex",
+  "author": {
+    "name": "laughmaker"
+  },
+  "homepage": "https://github.com/laughmaker/news-codex"
+}
