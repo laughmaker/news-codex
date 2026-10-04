@@ -1,6 +1,6 @@
 {
   "name": "news",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Browse the local News archive.",
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",

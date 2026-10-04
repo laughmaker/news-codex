@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.1 — 2026-10-04
+
+- Use the theme-aware amber brand color for bold and italic article text, including vocabulary phrases.
+
 ## 0.2.0 — 2026-10-04
 
 - Portable Node.js launcher and bundled server dependencies; removed machine-specific runtime paths.

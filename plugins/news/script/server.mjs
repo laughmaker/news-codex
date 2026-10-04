@@ -6,7 +6,7 @@ import { readFile } from 'node:fs/promises';
 import { readNews, getNews } from './data.mjs';
 const logo=await readFile(new URL('../assets/icon.svg',import.meta.url));
 const icons=[{src:'data:image/svg+xml;base64,'+logo.toString('base64'),mimeType:'image/svg+xml',sizes:['any']}];
-const server = new McpServer({name:'news',version:'0.2.0',icons});
+const server = new McpServer({name:'news',version:'0.2.1',icons});
 const uri='ui://news/reader';
 const result = data => ({content:[{type:'text',text:JSON.stringify(data)}],structuredContent:data});
 const annotations={readOnlyHint:true,destructiveHint:false,openWorldHint:false};

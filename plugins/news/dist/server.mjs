@@ -21551,7 +21551,7 @@ async function getNews(id) {
 // script/server.mjs
 var logo = await readFile3(new URL("../assets/icon.svg", import.meta.url));
 var icons = [{ src: "data:image/svg+xml;base64," + logo.toString("base64"), mimeType: "image/svg+xml", sizes: ["any"] }];
-var server = new McpServer({ name: "news", version: "0.2.0", icons });
+var server = new McpServer({ name: "news", version: "0.2.1", icons });
 var uri = "ui://news/reader";
 var result = (data) => ({ content: [{ type: "text", text: JSON.stringify(data) }], structuredContent: data });
 var annotations = { readOnlyHint: true, destructiveHint: false, openWorldHint: false };
