@@ -1,6 +1,6 @@
 {
   "name": "news",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Browse the local News archive with search and source links.",
   "extensions": {
     "com.openai": {

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.2 — 2026-10-04
+
+- Dedicated black N glyph on a transparent background for the masked sidebar icon.
+- Retain the amber logo in the reader and plugin listing. Inactive icon color remains controlled by Codex.
+
 ## 0.2.1 — 2026-10-04
 
 - Use the theme-aware amber brand color for bold and italic article text, including vocabulary phrases.

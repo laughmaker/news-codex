@@ -43,5 +43,5 @@ function accept(r){if(r?.structuredContent?.news){news=[...r.structuredContent.n
 window.addEventListener('message',e=>{if(e.source!==parent||e.data?.jsonrpc!=='2.0')return;const m=e.data,p=pending.get(m.id);if(p){clearTimeout(p.timer);pending.delete(m.id);m.error?p.reject(Error(m.error.message)):p.resolve(m.result)}else if(m.method==='ui/notifications/tool-result')accept(m.params)});
 async function load(){try{if(parent===window){accept(await(await fetch('/api/news')).json());return;}accept(await rpc('tools/call',{name:'list_news',arguments:{}}))}catch(e){$('status').textContent=e.message+'. Please open in a host supporting MCP Apps.'}}
 
-(async()=>{try{if(parent!==window){await rpc('ui/initialize',{appInfo:{name:'news-reader',version:'0.2.1'},appCapabilities:{},protocolVersion:'2026-01-26'});parent.postMessage({jsonrpc:'2.0',method:'ui/notifications/initialized',params:{}},'*')}await load()}catch(e){$('status').textContent=e.message}})();
+(async()=>{try{if(parent!==window){await rpc('ui/initialize',{appInfo:{name:'news-reader',version:'0.2.2'},appCapabilities:{},protocolVersion:'2026-01-26'});parent.postMessage({jsonrpc:'2.0',method:'ui/notifications/initialized',params:{}},'*')}await load()}catch(e){$('status').textContent=e.message}})();
 </script></html>
